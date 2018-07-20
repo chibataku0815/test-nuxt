@@ -1,0 +1,12 @@
+.card
+  border-top: 5px solid rgba(map-get($theme-colors, primary), 0.7)
+
+
+.card-shadow
+  box-shadow: 0 0 15px 0 rgba(35, 47, 53, 0.15)
+
+
+@each $color,
+$value in $theme-colors
+  .card-border-#{$color}
+    border-color: $value !important

@@ -1,0 +1,7 @@
+.btn
+  font-weight: bold
+
+
+@each $color,$value in $theme-colors
+  .btn-#{$color:not(:disabled)}
+    box-shadow: 0 0 10px lighten($value, 10%)
